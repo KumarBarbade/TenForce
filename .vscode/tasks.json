@@ -1,0 +1,61 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"build",
+				"${workspaceFolder}/TenForceConsole/TenForceConsole.csproj"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "run",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"run",
+				"--project",
+				"${workspaceFolder}/TenForceConsole/TenForceConsole.csproj"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "clean",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"clean",
+				"${workspaceFolder}/TenForceConsole/TenForceConsole.csproj"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "clean-build",
+			"dependsOn": [
+				"clean",
+				"build"
+			],
+			"dependsOrder": "sequence",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		}
+	]
+}
