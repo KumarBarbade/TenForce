@@ -8,6 +8,9 @@ see fit. Currently the system has no notion of temperature. To help you, the out
 creating these lists, but they do not calculate the average temperature. However, the planet class has a 
 method that provides the average temperature. This method can be used as a starting point. 
 Please motivate the changes you introduce in the domain model and in the API interface. 
+
+
+
 Preparing your environment 
 ●  Create a local git repository to store your code and setup 
 ●  Create a main branch. 
